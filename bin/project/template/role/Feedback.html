@@ -1,0 +1,73 @@
+<div id="Feedback" class="ahlu-page pt-page">
+<style type="text/css">
+        #Feedback .red{
+    	color:red;
+    }
+    </style>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		
+	});
+
+
+    window.AhluPage.events.on("onFeedbackBefore",function(e){
+    	var page = e.page;
+    	var u = UserSystem();
+	});
+    window.AhluPage.events.on("onFeedbackLeaving",function(e){
+    	var page = e.page;
+			
+	});
+	window.AhluPage.events.on("onFeedbackInit",function(e){
+    	var page = e.page;
+		
+		page.find('#characterLeft').text('140 characters left');
+	    page.find('#message').keydown(function () {
+	        var max = 140;
+	        var len = $(this).val().length;
+	        if (len >= max) {
+	            page.find('#characterLeft').text('Đã quá giới hạn kí tự');
+	            page.find('#characterLeft').addClass('red');
+	            $('#btnSubmit').addClass('disabled');            
+	        } 
+	        else {
+	            var ch = max - len;
+	            page.find('#characterLeft').text(ch + ' kí tự còn lại');
+	            page.find('#btnSubmit').removeClass('disabled');
+	            page.find('#characterLeft').removeClass('red');            
+	        }
+	    });  	
+	});
+</script>
+	<div class="ahlu-header color-bg">
+		 <div class="row no-space">
+			<div class="col-md-1 col-xs-1 no-space"><i class="ahlu-back fa fa-arrow-left">&nbsp;</i></div>
+		 	<div class="col-md-8 col-xs-8 no-space"><h1>Chăn sóc khách hàng</h1></div>
+		 	<div class="col-md-3 col-xs-3 actions">
+
+		 	</div>
+		 </div>
+	</div>
+	<div class="ahlu-body">
+		<ul class="ahlu-listview">
+			<li data-ripple="rgba(0,0,0, 0.4)"><a href="#" data-page="true" class="ahlu-button"><span><img src="{_ROOT_APP_}image/icon-phone.png" style="width: 25px;height: 25px;"></span>0909.656.119(Mr Nhí)</a></li>
+		</ul>
+		<div class="form-area" style="    padding: 10px;">  
+	        <form role="form">
+	       	 	<br style="clear:both">
+	            <h3 style="margin-bottom: 25px; text-align: center;">Thông tin phản hồi</h3>
+
+				<div class="form-group">
+					<input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+				</div>
+	            <div class="form-group">
+	            <textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="225" rows="7"></textarea>
+	                <span class="help-block"><p id="characterLeft" class="help-block ">You have reached the limit</p></span>                    
+	            </div>
+	        	<button type="button" id="submit" style="padding: 5px 30px;" name="submit" class="btn btn-primary pull-right">Gởi</button>
+	        </form>
+	    </div>
+	</div>
+	
+</div>

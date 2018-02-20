@@ -1,0 +1,19 @@
+{
+	"pointer":"home",
+	"plugins":[
+		{"name":"ahlu-form"},
+		{"name":"ahlu-slider"},
+		{"name":"ahlu-rate"},
+		{"name":"ahlu-coundown"},
+		{"name":"bootstrap-slider"},
+		{"name":"ahlu-slider"},
+		{"name":"ahlu-map"},
+		{"name":"ahlu-scan"},
+		{"name":"ahlu-chat"},
+		{"name":"ahlu-notification"}
+
+	],
+	"header":{
+		"color":"#4285f4"
+	}
+}

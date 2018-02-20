@@ -1,0 +1,47 @@
+<div id="Version" class="ahlu-page pt-page">
+<style type="text/css">
+        
+    </style>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		
+	});
+
+
+    window.AhluPage.events.on("onVersionBefore",function(e){
+    	var page = e.page;
+    	var u = UserSystem();
+
+    	page.find(".phone").focus().html(u.fullname);
+    	page.find(".address").html(u.address?u.address:"");
+				
+	});
+    window.AhluPage.events.on("onVersionLeaving",function(e){
+    	var page = e.page;
+			
+	});
+	window.AhluPage.events.on("onVersionInit",function(e){
+    	var page = e.page;
+		page.find("form").validate({
+			submitHandler:function(form){
+				var data = $(form).serializeObject();
+
+			}
+		});	
+	});
+</script>
+	<div class="ahlu-header color-bg">
+		 <div class="row no-space">
+			<div class="col-md-1 col-xs-1 no-space"><i class="ahlu-back fa fa-arrow-left">&nbsp;</i></div>
+		 	<div class="col-md-8 col-xs-8 no-space"><h1>Phiên bản</h1></div>
+		 	<div class="col-md-3 col-xs-3 actions">
+
+		 	</div>
+		 </div>
+	</div>
+	<div class="ahlu-body">
+		Ahlustore version 1.0
+	</div>
+	
+</div>
