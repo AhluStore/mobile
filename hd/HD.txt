@@ -1,0 +1,21 @@
+Bước 1:
+Cài Sublime https://www.sublimetext.com/3
+Crack key tại dây: https://gist.github.com/angrycoffeemonster/4f05896d233baf6bd9b0894e30b5fa63 hoặc https://gist.github.com/axhello/b97306fb3d1b297cf4e2b082214d619d
+
+Bước 2: Kết nối hosting
+Cài đặt package cho sublime tại dây : https://toidicode.com/cai-dat-va-su-dung-sftp-package-cho-sublime-text-92.html
+
+Sau khi cài xong, copy file sftp-config.json vào thư mục cần tương tác, nếu file này tồn tại thì ghi đè.
+
+Tìm đoạn code sau:
+"host": "xxx",
+ "user": "xxx",
+ "password": "xxxx",
+ "port": "22",
+ "remote_path": "/xxxxxxxxxxx/",
+
+thay đôi thông tin từ thông tin account của bạn đã cung cấp.
+
+
+
+Bước 3: Happy coding!.
