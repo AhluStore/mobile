@@ -1,0 +1,28 @@
+1/cấu hình sever php
+ a/ cài xampp:
+  tại đây https://www.apachefriends.org/index.html
+
+ b/ sửa thông tin file thực thi. Mở file ahlu.bat lên tìm dòng lênh: 
+ SET INSTALL_PATH="C:\server\php\php.exe" sửa thành SET INSTALL_PATH="duong_dan_cai_dat_xapp\php\php.exe"
+
+Ví dụ ở trên, Tôi cài đặt ổ C:\server
+
+2/ khởi động project
+
+bật file ahlu.bat lên gõ lệnh:
+
+project:make name:your_name_project
+
+
+your_name_project : sửa lại thành your poject name của bạn
+
+* sau khi đã tạo project
+
+dùng lệnh upload lên ftp của sublime, bấn chuột phải lên folder project chọn lệnh: SFTP/FTP -> upload folder
+
+Chờ vài giây. cho sublime upload source code lên hosting.
+
+3/ Chạy ứng dụng
+
+Mở chrome lên, chọn F12 ở chế độ mobile, ví dụ
+http://mobile.ahlustore.website/vendor-app-food-63a9f0ea7bb98050796b649e85481845/index.html
