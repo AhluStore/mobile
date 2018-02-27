@@ -1,4 +1,13 @@
 <div class="pt-page ahlu-page" id="home">
+	<style type="text/css">
+		#home .ahlu-body{
+			background: url("http://static.hdonline.vn/i/resources/new/video/2016/06/29/dang-cap-thu-cung-tvc-1.jpg") no-repeat;
+			    background-size: contain;
+    		background-position: center;
+    		background-color: #80dbed;
+    		color: 
+		}
+	</style>
 	<script>
 		
 		////////////////
@@ -8,37 +17,31 @@
 		
 		window.AhluPage.events.on("onHomeLeaving",function(e){
 
-			e.page.AhluSideSwipe("close");
-
 		});
 
 
 		window.AhluPage.events.on("onHomeInit",function(e){
 			var page = e.page;
 
-			
 		});
 	</script>
 	
 	<div class="ahlu-header row no-space color-bg">
 		<div class="col-md-2 col-xs-1 no-space">&nbsp;</div>
 		<div class="col-md-8 no-space col-xs-8">
-			<h1>Staff</h1>
+			<h1>App</h1>
 		</div>
 		<div class="col-md-2 no-space col-xs-3 actions">
-			<i class="fa fa-bell" onclick="GoTo('#Notification');" ontouchstart="GoTo('#Notification');">&nbsp;</i>  <i class="fa fa-qrcode scan-btn" data-type="table">&nbsp;</i>
+			<i class="fa fa-bell" onclick="GoTo('#Notification');" ontouchstart="GoTo('#Notification');">&nbsp;</i>  <i class="fa fa-qrcode scan-btn">&nbsp;</i>
 		</div>
 	</div>
 	<div class="ahlu-body">
-		<ul class="no-space menu">
-			<li class="pos col-xs-6 col-md-3"><div class="ahlu-button" href="#pos" data-page="true"><span><img src="{_ROOT_APP_}/role/staff/image/table.png" style=" width: 45px;"></span><br><span>Bàn</span></div></li>
-			<li class="pos_a col-xs-6 col-md-3"><div class="ahlu-button" href="?type=quick-payment#ProductQuick" data-page="true">
-				<span><img src="{_ROOT_APP_}/role/staff/image/quick-payment.png" style=" width: 45px;"></span><br><span>Thanh toán nhanh</span>
-				</div></li>
-			<li class="pos_a col-xs-6 col-md-3"><div class="ahlu-button" href="#report" data-page="true">
-				<span><img src="{_ROOT_APP_}/role/staff/image/history.png" style=" width: 45px;"></span><br><span>Lịch sử</span>
-				</div></li>
-		</ul>
+		<div style="text-align: center;
+    background: rgba(247, 247, 247, 0.8509803921568627);
+    padding: 16px 8px;
+    border-radius: 8px!important;
+    font-size: 1.5rem;
+    box-shadow: 5px 5px 0px #e5f3f52b;">Helloworld</div>
 	</div>
 
 </div>
