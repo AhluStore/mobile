@@ -60,7 +60,7 @@ class install{
 			return;
 		}
 		
-		$this->download($file,"http://mobile.ahlustore.website/modules_src/$module.zip");
+		$this->download($file,"http://mobile.ahlustore.website/modules_src/{$module}.zip");
 
 		//read file or folder will be copy
 		echo "Beging UnZipping $module.zip.\n";

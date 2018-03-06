@@ -10,6 +10,6 @@ set /p _cmd=cmd:
 if /I "%_cmd%" =="cls"  (
     cls
 ) else (
-   %INSTALL_PATH% ahlu.php %_cmd%
+   %INSTALL_PATH% ahlu %_cmd%
 )
 GOTO programend

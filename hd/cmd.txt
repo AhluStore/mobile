@@ -1,4 +1,4 @@
-1/cấu hình sever php
+﻿1/cấu hình sever php
  a/ cài xampp:
   tại đây https://www.apachefriends.org/index.html
 
@@ -8,19 +8,25 @@
 Ví dụ ở trên, Tôi cài đặt ổ C:\server
 
 2/ khởi động project
+	bật file ahlu.bat lên gõ lệnh:
 
-bật file ahlu.bat lên gõ lệnh:
+	a/ tạo mới
+		
 
-project:make name:your_name_project
+		project:make name:your_name_project
+		your_name_project : sửa lại thành your poject name của bạn
 
+		* sau khi đã tạo project
 
-your_name_project : sửa lại thành your poject name của bạn
+		Dùng lệnh upload lên ftp của sublime, bấn chuột phải lên folder project chọn lệnh: SFTP/FTP -> upload folder
 
-* sau khi đã tạo project
+		Chờ vài giây. cho sublime upload source code lên hosting.
+	
+	b/download ve
 
-dùng lệnh upload lên ftp của sublime, bấn chuột phải lên folder project chọn lệnh: SFTP/FTP -> upload folder
+		project:download name:your_name_project
+		your_name_project : sửa lại thành your poject name của bạn
 
-Chờ vài giây. cho sublime upload source code lên hosting.
 
 3/ Chạy ứng dụng
 
