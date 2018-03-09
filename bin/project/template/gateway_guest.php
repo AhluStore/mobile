@@ -41,24 +41,8 @@ window.AhluPage.events.on("ahluReady",function(e) {
             if(hash!=undefined && hash!=""){
                 AhluAppConfig.pointer = hash;
             }
-            if($("#welcome").length!=0){
-                pointer ="welcome";
-            }
-          
-            var id = setInterval(function(){
-                if($("#"+pointer).length!=0){
-                    clearInterval(id);
-
-                    if(!$("#"+pointer).hasClass("pt-page") || pointer==AhluAppConfig.pointer){
-                        GoTo(AhluAppConfig.pointer,{history:false});
-                    }
-                    else{
-                        AhluPage.history.clear(AhluAppConfig.pointer);
-                        GoTo(pointer,{history:false});
-                    }
-
-                }
-            },100);
+             //notified          
+            window.AhluPage.Rendered = true;
 
         });
        // window.AhluPage.GoTo(AhluAppConfig.pointer);
