@@ -1,5 +1,5 @@
 {
-	"pointer":"home",
+	"pointer":"GuideIntro",
 	"plugins":[
 		{"name":"ahlu-form"},
 		{"name":"ahlu-slider"},

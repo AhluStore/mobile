@@ -20,7 +20,7 @@
 
            page.on(window.AhluPage.CLICK,".btn-get-start",function(e){
                window.AhluPage.history.clear("home");
-               GoTo(AhluAppConfig.pointer);
+               GoTo("home");
            });
 
            new Dragend(page.find("#demoIntro").get(0), {
