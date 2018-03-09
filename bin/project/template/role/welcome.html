@@ -1,38 +1,3 @@
-<div id="welcome" class="ahlu-page pt-page">
-    <style type="text/css">
-        #welcome{
-                background-color: #429c44;
-            color: #a5d8c7;
-        }
-    </style>
-    <script type="text/javascript">
-        window.AhluPage.events.on("onWelcomeBefore",function(e){
-            $("#welcome .intro").fadeIn("slow",function(){
-                setTimeout(function(){
-                    GoTo("GuideIntro");
-                },1000);
-            });
-        });
-    </script>
-    <div class="ahlu-body">
-        <div style="height:100%;display: none;"  class="slideshow">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="https://media.foody.vn/res/g2/10221/prof/s576x330/foody-mobile-v3-jpg-308-635778197739958586.jpg" /></div>
-                    <div class="swiper-slide"><img src="https://media.foody.vn/res/g2/10221/prof/s576x330/foody-mobile-v3-jpg-308-635778197739958586.jpg" /></div>
-                    <div class="swiper-slide"><img src="https://media.foody.vn/res/g2/10221/prof/s576x330/foody-mobile-v3-jpg-308-635778197739958586.jpg" /></div>
-                    <div class="swiper-slide"><a href="#home" data-page="true" data-history="false" class="btn btn-danger">Go to store</a></div>
-                </div>
-                <div class="swiper-pagination"></div>
-            </div>
-        </div>
-        <div style="display: none;position: absolute;
-    top: 35%;
-    left: 30%;"  class="intro">
-            <img src="images/logo.png" style="width: 155px;"  />
-        </div>
-    </div>
-</div>
 <div id="GuideIntro" class="ahlu-page pt-page">
     <style type="text/css">
         #GuideIntro{

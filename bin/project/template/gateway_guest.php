@@ -7,10 +7,6 @@ ob_start();
 
     //echo $path;
     if(is_dir($path)){
-        //include css
-        if(file_exists($path."/ahlu.css")){
-            echo '<link href="{_ROOT_APP_}role/'.$role.'/ahlu.css" rel="stylesheet" type="text/css" />';
-        }
 
         $data = array();
         foreach(glob("{$path}/*") as $item){
